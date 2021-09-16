@@ -1,0 +1,110 @@
+\documentclass[10pt, letterpaper]{article}
+\usepackage[a4paper, margin=0.25in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{inconsolata}
+\usepackage{stmaryrd}
+\usepackage{hyperref}
+\renewcommand*\familydefault{\ttdefault}
+\usepackage[T1]{fontenc}
+\usepackage{ragged2e}
+\definecolor{purduegold}{RGB}{170, 140, 0}
+
+\newcommand{\emphasis}[1]{
+    \textcolor{purduegold}{\textbf{#1}}
+}
+
+\newcommand{\Emphasis}[1]{\uppercase{\textbf{#1}}}
+
+\newcommand{\EMPHASIS}[1]{
+    \uppercase{\emphasis{#1}}
+}
+
+\newcommand\bars{\leavevmode\xleaders\hbox{-}\hfill\kern0pt}
+
+\title{
+    \vspace{-10mm}
+    {\Huge {\href{https://www.linkedin.com/in/EthanDCampbell}{Ethan.\textbf{Campbell}}}}\\
+    %{\small 341 Smiley St. West Lafayette, IN 47906 \hspace{10pt} (765)-438-5553}\\
+    {\small 
+        [{
+            \emphasis{ethan.d.campbell@outlook.com}, \hspace{10pt} 
+            \emphasis{(765)438-5553}, \hspace{10pt} 
+            \href{http://www.linkedin.com/in/EthanDCampbell}{\emphasis{linkedin.com/in/EthanDCampbell}}
+        }]
+    }\\
+    {\normalsize 
+        /*------------------------------------
+        Master's student specializing in machine learning and embedded systems
+        ------------------------------------*/
+    }
+}
+\date{} %omit the date line
+\begin{document}
+
+\maketitle
+\vspace{-20mm}
+\section*{\huge{//Experience - Internships}}
+    \subsection*{\Emphasis{Milwaukee Tool}; \emphasis{Firmware Engineering;} Summer 2021}
+        \begin{enumerate}[label={[\arabic*]}]
+            \setcounter{enumi}{-1}
+            \item Developed a firmware analysis tool to extract run time data without compiling source or deploying firmware executables. Deployed into CI/CD pipeline for seamless integration with firmware development. [{\scriptsize \EMPHASIS{Python}}]
+            \item Developed a circular buffer firmware module and driver for infinite data logging and retrieval to an eternal flash SPI IC. Extensibility and modularity primary factors for design. [{\scriptsize\EMPHASIS{C}}]
+        \end{enumerate}
+    \subsection*{\Emphasis{Garmin}; \emphasis{Software Engineering;} Summer 2019}
+        \begin{enumerate}[label={[\arabic*]}]
+            \setcounter{enumi}{-1}
+            \item Developed and deployed Software Quality tools, which improved workflow and efficiency of global teams. Central management \& analysis with networked background watchers on test benches. See \textbf{Projects[2]}\\ {\scriptsize [\EMPHASIS{C\#}, \EMPHASIS{.NET}, \EMPHASIS{WMI}]}
+        \end{enumerate}
+    \subsection*{\Emphasis{Aptiv}; \emphasis{Systems Engineering;} Summer 2018}
+        \begin{enumerate}[label={[\arabic*]}]
+            \setcounter{enumi}{-1}
+            \item Root cause failure analysis for automotive systems, which progressed the development of new products. 
+            \item Evaluated CAN protocol communication and improved errant equipment behavior, which resulted in faster product validation methods. {\scriptsize [\EMPHASIS{CAN}]}
+        \end{enumerate}
+    \subsection*{\Emphasis{Delphi}; \emphasis{Production Control and Logistics;} Summer 2017}
+        \begin{enumerate}[label={[\arabic*]}]
+            \setcounter{enumi}{-1}
+            \item Developed factory information dashboard, which resulted in better inventory and production management.\\ {[{\scriptsize \EMPHASIS{Java, Apache, Bootstrap}}]}
+        \end{enumerate}
+\section*{\huge{//Education :\emphasis{Purdue University}}}
+    \subsection*{May 2021; Bachelor's - Computer Engineering}
+        \begin{enumerate}[label={[\arabic*]}]
+            \setcounter{enumi}{-1}
+            \item \emphasis{3.7 GPA} | Eta Kappa Nu (HKN) : IEEE Honor Society $\rightarrowtriangle$ Operations Director - Executive
+            \item \emphasis{UTA} ECE 404 Computer Security | 14 hr/wk | instructed and debugged python
+        \end{enumerate}
+    \subsection*{May 2023; Master's - Electrical and Computer Engineering}
+        \begin{enumerate}[label={[\arabic*]}]
+            \setcounter{enumi}{-1}
+            \item \emphasis{GTA} ECE 463 Computer Networks | 20 hr/wk | course coordination, UTA supervision, office hours
+        \end{enumerate}
+\section*{\huge{//Skills}}
+    \begin{enumerate}[label={[\arabic*]}]
+        \setcounter{enumi}{-1}
+        \item \emphasis{C} \& \emphasis{C++}\hspace{10pt}[ARM Firmware, Computer Vision, SQ Network Monitoring App, Lightweight Web Server, RTOS]\\
+            \hspace*{1in}{Frameworks $\rightarrowtriangle$ [OpenCV, QT, CUDA, libArgus]}
+        \item \emphasis{Python}\hspace{26pt}[Deep Learning, ML, Firmware Source Analytics, Network Applications, Image Processing App]\\
+            \hspace*{1in}{Frameworks $\rightarrowtriangle$ [Scikit, Numpy, PyTorch, Keras, OpenCV, PyQT]}
+        \item \emphasis{Java \& C\#}\hspace{10pt}[Web Server + Dashboard Interface, Micro C Compiler]\\
+            \hspace*{1in}{Frameworks $\rightarrowtriangle$ [Apache, Boostrap CSS, Ajax, WMI, .NET]}
+        
+    \end{enumerate}
+% \section*{//Activities}
+%     \begin{enumerate}[label={[\arabic*]}]
+%         \setcounter{enumi}{-1}
+%         \item HKN Operations Director: manage a student run non-for-profit coffee shop. Responsible for staffing, inventory, profitability, company relations.
+%         \item Autonomous Controls team member working toward Level 4 Automation.
+%     \end{enumerate}
+    \vspace{-10mm}
+% \section*{\huge{//Projects}}
+  \section*{\huge //Projects}
+    \begin{enumerate}[label={[\arabic*]}]
+        \setcounter{enumi}{-1}
+        \item \href{https://jpanos.github.io/ECE-477/}{\Emphasis{Senior Design}}: {Software Lead}. Developed Computer Vision system for Autonomous Pollination Drone. Used Nvidia Jetson Nano SBC and OpenCV \emphasis{C++}. Optimized with {libArgus} \& \emphasis{CUDA}. Wrote UART based communication protocol for inter-chip communication layer. Developed low-latency drone camera network stream. \href{https://jpanos.github.io/ECE-477/}{\underline{site}}
+        \item \Emphasis{Mircroprocessor OS}: Wrote and implemented a low-level custom operating system written in embedded \emphasis{C}. Utilized micro peripherals to allow for keyboard input via PS/2 legacy protocol for keyboards.
+        \item \Emphasis{SQ Application}: Network application in \emphasis{C\#}. Nodes on test SQ servers report to central server with diagnostics: temp, cpu, memory, storage, software versions, status, etc. Used .NET and WMI.
+
+    \end{enumerate}
+\end{document}
